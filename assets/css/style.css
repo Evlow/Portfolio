@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=David+Libre:wght@400;500&family=Palanquin:wght@100&family=Thasadith&display=swap');
+
+*{font-family: 'David Libre', serif;}
+
+
+.hr1 {
+width: 70%;
+}
+
+li{
+  font-size: 1.2em;
+}
+#page {
+  width: 95%;
+  margin: 0 AUTO;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 20PX 0;
+  height: 50px;
+}
+
+.navbar li a {
+  padding-right: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.me {
+  border-radius: 50% 20% / 10% 40%;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  overflow: hidden;
+}
+.wolf {
+  padding: 20px 0 20px 0;
+  width: 350px;
+  height: 350px;
+}
+h1 {
+font-weight: inherit;
+  font-size: 7em;
+  color: rgb(8, 8, 88);
+}
+
+/* h2 {
+  font-size: 2em;
+  font-style: oblique;
+  color: rgb(8, 8, 88);
+} */
+.presentation {
+  text-align: center;
+}
+
+.social-network a{
+color:rgb(8, 8, 88);
+}
+
+.social-network {
+right: 0;
+  width:20px;
+ text-align: center;
+ position: fixed;
+ top:50%;
+ right: 0;
+ margin-right: 2%;
+}
+
+.social-network ul li {
+  margin: 10px 0px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/************* SCROLLBAR **************/
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #c2d2e4;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 30px;
+  background-color: rgb(8, 8, 88);
+}
+
+/* Scrollbar sous Firefox */
+.scroller-custom {
+  scrollbar-width: thin;
+  scrollbar-color:  rgb(8, 8, 88);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(8, 8, 88);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: rgb(8, 8, 88);
+}
