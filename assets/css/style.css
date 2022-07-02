@@ -198,7 +198,9 @@ span a {
 }
 
 /************* FOOTER **************/
-
+footer {
+  bottom: 0;
+}
 footer ul {
   align-items: center;
   display: flex;
@@ -222,6 +224,12 @@ footer p {
   text-align: center;
 }
 
+/*************  PAGE PROJECTS **************/
+
+.projects {
+  text-align: center;
+}
+
 /*************  RESPONSIVE **************/
 
 @media screen and (max-width: 488px) {
@@ -238,7 +246,7 @@ footer p {
     text-align: center;
   }
 
-  .h3-formation{
+  .h3-formation {
     text-align: center;
   }
   .wolf {
@@ -268,26 +276,23 @@ footer p {
     width: 150px;
   }
 
-
-
   .hobbies,
   .formation {
     flex-direction: column;
   }
 
-
   .code-svg,
-.hobbies-svg {
-  width: 150px;
-  padding-bottom: 40px;
-}
+  .hobbies-svg {
+    width: 150px;
+    padding-bottom: 40px;
+  }
 
-.competences{
-  margin: 30px;
-}
-.bloc-competences{
-  margin-bottom: 60px;
-}
+  .competences {
+    margin: 30px;
+  }
+  .bloc-competences {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 640px) {
