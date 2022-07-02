@@ -5,6 +5,9 @@
   line-height: 1.3em;
   font-family: "David Libre", serif;
 }
+body {
+  width: 100%;
+}
 p {
   font-size: 1.1em;
 }
@@ -15,24 +18,26 @@ p {
 .hr2 {
   width: 30%;
 }
-#page {
-  width: 90%;
-  margin: 0 AUTO;
-}
+
 .code-svg,
 .hobbies-svg {
   width: 250px;
 }
-.navbar ul {
+header nav ul {
   display: flex;
-  justify-content: center;
-  margin: 30px 0 20px 0;
-  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  position: fixed;
+  width: 100%;
+}
+
+header nav {
+  height: 20vh;
 }
 
 .navbar li a {
   font-size: 1.5em;
-  margin: 50px;
   justify-content: center;
   text-decoration: none;
   color: black;
@@ -44,7 +49,6 @@ p {
   height: 400px;
   object-fit: contain;
   overflow: hidden;
-  padding-left: 100px;
 }
 .wolf {
   padding: 40px 0 20px 0;
@@ -94,13 +98,10 @@ h3 {
 }
 
 .social-network {
-  right: 0;
-  width: 20px;
-  text-align: center;
   position: fixed;
   top: 50%;
   right: 0;
-  margin-right: 2%;
+  margin: 0 1%;
 }
 
 .social-network ul li {
@@ -108,7 +109,12 @@ h3 {
   font-size: 1.5em;
   text-align: center;
 }
+/************* ARTICLE **************/
 
+article {
+  width: 90%;
+  margin: 0 auto;
+}
 /************* SCROLLBAR **************/
 
 ::-webkit-scrollbar {
@@ -154,7 +160,6 @@ h3 {
 
 .hobbies,
 .formation {
-  
   margin: 30px;
   display: flex;
   align-items: center;
@@ -166,14 +171,14 @@ span a {
   color: rgb(55, 55, 153);
   font-weight: 400;
 }
-.bloc-hobbies, .bloc-formation {
+.bloc-hobbies,
+.bloc-formation {
   margin: 0 auto;
 }
 
-.h3-formation{
+.h3-formation {
   text-align: right;
 }
-
 
 /************* COMPETENCES **************/
 .bloc-competences {
@@ -215,4 +220,77 @@ footer p {
   color: rgb(8, 8, 88);
   font-size: 1em;
   text-align: center;
+}
+
+/*************  RESPONSIVE **************/
+
+@media screen and (max-width: 488px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-left: 0;
+  }
+  h3 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .h3-formation{
+    text-align: center;
+  }
+  .wolf {
+    padding: 40px 0 20px 0;
+    width: 250px;
+    height: 250px;
+  }
+  .hr1 {
+    width: 75%;
+  }
+
+  .name {
+    padding-left: 50px;
+  }
+  .bloc-me {
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+  }
+
+  .me {
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+  }
+  .code-svg,
+  .hobbies-svg {
+    width: 150px;
+  }
+
+
+
+  .hobbies,
+  .formation {
+    flex-direction: column;
+  }
+
+
+  .code-svg,
+.hobbies-svg {
+  width: 150px;
+  padding-bottom: 40px;
+}
+
+.competences{
+  margin: 30px;
+}
+.bloc-competences{
+  margin-bottom: 60px;
+}
+}
+
+@media screen and (max-width: 640px) {
+}
+@media screen and (max-width: 910px) {
 }
