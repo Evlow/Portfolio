@@ -207,8 +207,13 @@ footer{bottom: 0;}
 footer ul {
   align-items: center;
   display: flex;
-  justify-content: center;
+ 
   height: 50px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
 }
 
 footer li a {
@@ -241,7 +246,7 @@ footer p {
 
 @media screen and (max-width: 488px) {
   h1 {
-    font-size: 3em;
+    font-size: 2.8em;
   }
   h2 {
     font-size: 2em;
@@ -306,6 +311,70 @@ footer p {
 }
 
 @media screen and (max-width: 640px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-left: 0;
+  }
+  h3 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .h3-formation{
+    text-align: center;
+  }
+  .wolf {
+    padding: 40px 0 20px 0;
+    width: 250px;
+    height: 250px;
+  }
+  .hr1 {
+    width: 75%;
+  }
+
+  .name {
+    padding-left: 50px;
+  }
+  .bloc-me {
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+  }
+
+  .me {
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+  }
+  .code-svg,
+  .hobbies-svg {
+    width: 150px;
+  }
+
+
+
+  .hobbies,
+  .formation {
+    flex-direction: column;
+  }
+
+
+  .code-svg
+.hobbies-svg {
+  width: 150px;
+  padding-bottom: 40px;
 }
+
+.competences{
+  margin: 30px;
+}
+.bloc-competences{
+  margin-bottom: 60px;
+}
+}
+
 @media screen and (max-width: 910px) {
 }
