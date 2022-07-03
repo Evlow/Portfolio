@@ -206,10 +206,7 @@ span a {
 footer{bottom: 0;}
 footer ul {
   align-items: center;
-  display: flex;
- 
   height: 50px;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -308,6 +305,9 @@ footer p {
 .bloc-competences{
   margin-bottom: 60px;
 }
+footer li a {
+  font-size: 1.3em;
+}
 }
 
 @media screen and (max-width: 640px) {
@@ -373,6 +373,9 @@ footer p {
 }
 .bloc-competences{
   margin-bottom: 60px;
+}
+footer li a {
+  font-size: 1.3em;
 }
 }
 
